@@ -1,0 +1,72 @@
+/* Estilos para a tela principal */
+.container {
+    margin-top: 3rem;
+  }
+  
+  /* Estilizando o título */
+  h2 {
+    text-align: center;
+    font-weight: bold;
+    color: #4a90e2;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Caixa de filtro */
+  .input-group {
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-control {
+    border-radius: 4px;
+    padding: 0.6rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+  }
+  
+  /* Botão de filtro */
+  .btn-primary {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    background-color: #4a90e2;
+    border: none;
+    transition: background-color 0.3s;
+    border-radius: 4px;
+  }
+  
+  .btn-primary:hover {
+    background-color: #357abd;
+  }
+  
+  /* Estilo da tabela de usuários */
+  .table {
+    width: 100%;
+    margin-top: 1rem;
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+  
+  .table th,
+  .table td {
+    padding: 0.75rem;
+    text-align: center;
+    vertical-align: middle;
+    border-top: 1px solid #ddd;
+  }
+  
+  .table th {
+    background-color: #4a90e2;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+  }
+  
+  .table-bordered th,
+  .table-bordered td {
+    border: 1px solid #ddd !important;
+  }
+  

@@ -1,0 +1,35 @@
+<div class="container mt-5">
+    <h2 class="mb-4">Login</h2>
+    <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          name="email"
+          [(ngModel)]="email"
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <label for="senha" class="form-label">Senha</label>
+        <input
+          type="password"
+          class="form-control"
+          id="senha"
+          name="senha"
+          [(ngModel)]="senha"
+          required
+        />
+      </div>
+      <button type="submit" class="btn btn-primary" [disabled]="!loginForm.valid">
+        Entrar
+      </button>
+      <!-- Exibir mensagem de erro -->
+      <div *ngIf="erroMensagem" class="alert alert-danger mt-3">
+        {{ erroMensagem }}
+      </div>
+    </form>
+  </div>
+  
